@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="background-image"></div>
+            <div class="head container">
+                <div class="header-elements">
+                    <h1 id="page-title">Find your film</h1>
+                    <h3 id ="page-title-link"><a href="watchlist.html">My watchlist</a></h3>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div id="search-form" class="searchbar">
+                    <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                    <input id="search-input" type="text" placeholder="Search for the movie" autocomplete="off">
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="container">
+                <ul id="movie-list" class="movie-list">
+                    <div class="empty-list">
+                        <img src="images/empty-list-icon.png">
+                        <p2>Start exploring</p2>
+                    </div>
+                </ul>
+            </div>
+        </main>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
