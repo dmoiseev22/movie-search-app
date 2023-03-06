@@ -5,6 +5,7 @@ html, body {
     color: #111827;
 }
 
+/*  DIV */
 header {
     color: #ffffff;
     height: 200px;
@@ -23,7 +24,17 @@ header {
     width: 100%;
 }
 
+/* BACKGOUND IMAGE AT THE TOP */
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/background-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
 
+/* LINKS */
 a {
     color: inherit;
     text-decoration: none;
@@ -32,6 +43,7 @@ a {
     z-index: 1;
 }
 
+/* SEARCH FORM */
 #search-form {
     display: flex;
     width: 466px;
@@ -86,22 +98,11 @@ input:focus{
     outline: none;
 }
 
-/* BACKGOUND IMAGE AT THE TOP */
-.background-image {
-    width: 100%;
-    height: 100%;
-    background-image: url("images/background-img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-}
-
 .container {
     max-width: 466px;
     /* height: 100%; */
     margin: auto;
 }
-
 
 /* TYPOGRAPHY */
 header h1 {
@@ -179,7 +180,7 @@ li {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    right: 40px;
+    right: 20px;
     border-bottom: 1.5px solid #E5E7EB;
 }
 
@@ -253,7 +254,9 @@ li {
     font-size: 5px;
 }
 
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 450px) {
+    /* LAYOUT */
     .header-elements {
         display: flex;
         flex-direction: column;
@@ -267,10 +270,6 @@ li {
         min-width: 200px;
     }
 
-    p2 {
-        font-size: 10px;
-    }
-
     .movie-list {
         width: auto;
     }
@@ -281,11 +280,16 @@ li {
         width: 100vw;
     }
 
+    /* TYPOGRAPHY */
     header h1 {
         font-size: 30px;
     }
 
     header h3 {
+        font-size: 10px;
+    }
+
+    p2 {
         font-size: 10px;
     }
 
