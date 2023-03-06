@@ -97,7 +97,7 @@ input:focus{
 }
 
 .container {
-    width: 466px;
+    max-width: 466px;
     /* height: 100%; */
     margin: auto;
 }
@@ -156,7 +156,7 @@ li {
 }
 
 .movie-list {
-    width: 100%;
+    width: auto;
 }
 
 .empty-list{
@@ -267,11 +267,13 @@ li {
         min-width: 200px;
     }
 
-    .container {
-        width: 100vw;
+    .movie-list {
+        width: auto;
     }
 
-    .movie-list {
+    .movie-list
+    .movie
+    .container {
         width: 100vw;
     }
 
