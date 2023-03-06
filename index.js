@@ -11,6 +11,13 @@ document.getElementById("search-btn").addEventListener('click', function() {
     fetchMoviesList(searchText)
 })
 
+document.getElementById('search-input').addEventListener('keypress', function (e) {
+    if (e.key === "Enter") {
+        event.preventDefault()
+        document.getElementById("search-btn").click()
+    }
+})
+
 // FETCH MOVIES LIST  
 function fetchMoviesList(searchText) {
     document.getElementById("search-input").value = ""

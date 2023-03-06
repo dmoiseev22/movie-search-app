@@ -1,5 +1,9 @@
 let watchlistArr = JSON.parse(localStorage.getItem('watchlist'))
-document.getElementById("movie-list").addEventListener('click', removeFromWatchlist)
+document.getElementById("movie-list").addEventListener('click', function (e) {
+    if (e.target.id) {
+        removeFromWatchlist(e)
+    }
+})
 
 
 // FETCH MOVIES FROM WATCHLIST ARRAY
