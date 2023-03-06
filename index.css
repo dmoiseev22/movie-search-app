@@ -117,6 +117,7 @@ header h3 {
     font-weight: 700;
     font-size: 14px;
     margin: 0px;
+    text-decoration: underline;
 }
 
 main h3 {
